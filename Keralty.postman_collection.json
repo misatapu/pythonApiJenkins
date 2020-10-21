@@ -1,0 +1,535 @@
+{
+	"info": {
+		"_postman_id": "92b37d51-d58d-4ee3-bb50-bbb394ff29e4",
+		"name": "Keralty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5001/api/clients POST V3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3NWExZTNkYi00MzBkLTQ5N2MtYWI0Mi0wMDY2YjJmMTRjOWEiLCJleHAiOjE2MDMxNjI0NzcsImZyZXNoIjpmYWxzZSwiaWF0IjoxNjAzMTU1Mjc3LCJ0eXBlIjoiYWNjZXNzIiwibmJmIjoxNjAzMTU1Mjc3LCJpZGVudGl0eSI6IjVmOGUyZGI5MzE2YzZlNGY4NWUzNjQ2NyJ9.cpCqLURudgnonloMgihRT_WCVq6bq6IkD46Amfauus8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"doc_id\": \"964461232w410\",\n  \"name\": \"juan\",\n  \"last_name\": \"triana\",\n  \"preexistence\": [\"\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/clients SignupApi Auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test2@gmail.com\",\n    \"password\": \"test123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/clients LoginApi Auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@gmail.com\",\n    \"password\": \"test1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/clients LoginApi Validate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhYWE0YzY0Zi02NDUxLTQyMDMtYTE0YS0zMTE0ZjkwNGI3NWYiLCJleHAiOjE2MDM3NTk4OTAsImZyZXNoIjpmYWxzZSwiaWF0IjoxNjAzMTU1MDkwLCJ0eXBlIjoiYWNjZXNzIiwibmJmIjoxNjAzMTU1MDkwLCJpZGVudGl0eSI6IjVmOGUyZGI5MzE2YzZlNGY4NWUzNjQ2NyJ9.u80fxUROQEZfzyTerV7n8ockJ4v3wHabBwx5jvZDcCI\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/auth/validate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"auth",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/clients GET V2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/clients POST V2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"doc_id\": \"964461232w4\",\n  \"name\": \"juan\",\n  \"last_name\": \"triana\",\n  \"preexistence\": [\"\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/client GET V2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"doc_id\": \"964461232q4\",\n  \"name\": \"pedro\",\n  \"last_name\": \"trujillo\",\n  \"preexistence\": [\"\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/client/5f8e1ad115e43ad46d478998",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"client",
+						"5f8e1ad115e43ad46d478998"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/client DELETE V2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"doc_id\": \"964461232q4\",\n  \"name\": \"pedro\",\n  \"last_name\": \"trujillo\",\n  \"preexistence\": [\"\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/client/5f8e1ad115e43ad46d478998",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"client",
+						"5f8e1ad115e43ad46d478998"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/client PUT V2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"doc_id\": \"964461232q4\",\n  \"name\": \"pedro\",\n  \"last_name\": \"trujillo\",\n  \"preexistence\": [\"\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/client/5f8e1ad115e43ad46d478998",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"client",
+						"5f8e1ad115e43ad46d478998"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/mongodb GET Simple",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"database\" : \"ClientsDB\",\n    \"collection\": \"clients\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/mongodb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"mongodb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/mongodb POST Simple",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"database\": \"ClientsDB\",\n  \"collection\": \"clients\",\n  \"Document\": {\n    \"First_Name\": \"Jhon 7\",\n    \"Age\": 59\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/mongodb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"mongodb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/mongodb DELETE Simple",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"database\": \"ClientsDB\",\n  \"collection\": \"clients\",\n  \"Filter\": {\n    \"First_Name\": \"Jhon 7\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/mongodb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"mongodb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/mongodb PUT Simple",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"database\": \"ClientsDB\",\n  \"collection\": \"clients\",\n  \"Filter\": {\n    \"First_Name\": \"Jhon 7\"\n  },\n  \"DataToBeUpdated\": {\n    \"Last_Name\": \"Triana\",\n    \"Age\": 26\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/mongodb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"mongodb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAppTest",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"database\" : \"ClientsDB\",\n    \"collection\": \"clients\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.203.227.135:5001/mongodb",
+					"protocol": "http",
+					"host": [
+						"34",
+						"203",
+						"227",
+						"135"
+					],
+					"port": "5001",
+					"path": [
+						"mongodb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostAppTest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"database\": \"ClientsDB\",\n  \"collection\": \"clients\",\n  \"Document\": {\n    \"First_Name\": \"Jhon 7\",\n    \"Age\": 57\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.203.227.135:5001/mongodb",
+					"protocol": "http",
+					"host": [
+						"34",
+						"203",
+						"227",
+						"135"
+					],
+					"port": "5001",
+					"path": [
+						"mongodb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutAppTest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"database\": \"ClientsDB\",\n  \"collection\": \"clients\",\n  \"Filter\": {\n    \"First_Name\": \"Jhon 7\"\n  },\n  \"DataToBeUpdated\": {\n    \"Last_Name\": \"Triana\",\n    \"Age\": 26\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://107.23.93.47:5001/mongodb",
+					"protocol": "http",
+					"host": [
+						"107",
+						"23",
+						"93",
+						"47"
+					],
+					"port": "5001",
+					"path": [
+						"mongodb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAppTest",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"database\": \"ClientsDB\",\n  \"collection\": \"clients\",\n  \"Filter\": {\n    \"First_Name\": \"Jhon 7\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://107.23.93.47:5001/mongodb",
+					"protocol": "http",
+					"host": [
+						"107",
+						"23",
+						"93",
+						"47"
+					],
+					"port": "5001",
+					"path": [
+						"mongodb"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
