@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def base():
-    return Response(response=json.dumps({"Status": "UP SUMERCÉ"}),
+    return Response(response=json.dumps({"Status": "UP NOW"}),
                     status=200,
                     mimetype='application/json')
   
